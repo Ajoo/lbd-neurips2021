@@ -66,7 +66,6 @@ num_reactions = reagents.shape[0]
 
 # This is essentially the same as before but with an added integrative state
 # that computes the loss function
-
 @jit
 def autonomous_flow(z, t, k, target):
     rates = k*jnp.prod(z[:-1]**reagents, axis=-1)
@@ -96,7 +95,7 @@ def solver(tu, t, z0, k, B, target, u):
     return jnp.concatenate((Z1, Z2[1:,:-1]), 0), cost
 
 # Choose times at which solution should be computed
-# These are set as the point in times where a discontinuity in the dynamics
+# These are set as the times where a discontinuity in the dynamics
 # exists
 Tu = np.array([0.0, t[3]])
 T = np.array([t[3], 40.0, 80.0])

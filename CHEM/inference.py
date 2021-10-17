@@ -217,7 +217,8 @@ z0h = np.maximum(0, x[0])
 #%% Re-estimate reaction rates
 # The first step is to take the rough initial rates estimates from the
 # previous step and re-estimate them properly by solving a nonlinear least 
-# squares problem. This can be done system by system since
+# squares problem. This can be done system by system since there are no shared 
+# parameters
 
 kh = np.zeros(k0h.shape)
 for system in range(12):
@@ -238,7 +239,7 @@ for system in range(12):
 # true initial condition of the autonomous part of the simulation. 
 # Here we let the optimizer also solve for the x[3] that minimizes the least
 # square error for each simulation as this should lead to a better estimate
-# of the reaction rates
+# of the reaction rates.
 # Note: This step can likely be skipped and we can proceed directly to estimating 
 # the input matrix since it takes a while
     
@@ -316,7 +317,7 @@ result = least_squares(
 _, _, Bh = get_params(result.x)
 #%% Plot B coefficients
 # The sparseness pattern of Bh is very obvious now even though the whitepaper
-# didn'tmention it.  
+# didn't mention it.  
 # First 4 inputs each affects 2 species with a coefficient of 1
 # Second 4 inputs each affects 2 species with a coefficient of 0.25
 

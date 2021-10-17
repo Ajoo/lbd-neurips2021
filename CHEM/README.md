@@ -11,7 +11,7 @@ To reproduce my solution for the CHEM track:
 
 ## Contents
 
-The following 3 interactive scripts whould be run in order. These are similar to jupyter notebooks and were meant to be run in an interactive session (on an IDE that supports it) but it should also be possible to run them in sequence to generate the artifacts necessary:
+The following 3 interactive scripts should be run in order. These are similar to jupyter notebooks and are meant to be run in an interactive session (on an IDE that supports it) but it should also be possible to run them in sequence to generate the artifacts necessary:
 
 * **structure-inference.py**: Infers the structure of the chemical network, i.e., what reactions are present. Also provides an initial estimate of the dynamical system parameters;
 * **inference.py**: Infers the parameters of the dynamical system (reaction rates, input matrix and initial conditions) given a fixed structure;
