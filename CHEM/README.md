@@ -26,6 +26,7 @@ The following libraries should be installed in order to run the scripts (the ver
 * python (3.7.10)
 * numpy (1.20.3)
 * scipy (1.7.1)
+* scikit-learn (0.24.2)
 * pandas (1.2.5)
 * jax (0.2.17)
 * jaxlib (0.1.68)
