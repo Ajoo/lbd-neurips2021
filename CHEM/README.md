@@ -9,6 +9,8 @@ To reproduce my solution for the CHEM track:
 2. Download the training data and starter kit files from [codalab](https://competitions.codalab.org/competitions/33378#participate-get_starting_kit) and unpack them in the `CHEM` folder (should create new folders named `CHEM_training_data` and `CHEM_starter_kit`)
 3. Run the scripts described below
 
+A short presentation describing the solution can be found [here](beamer.pdf).
+
 ## Contents
 
 The following 3 interactive scripts should be run in order. These are similar to jupyter notebooks and are meant to be run in an interactive session (on an IDE that supports it) but it should also be possible to run them in sequence to generate the artifacts necessary:

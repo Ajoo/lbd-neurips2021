@@ -10,6 +10,8 @@ To reproduce the solutions for the ROBO track:
 3. Run the scripts that generate the artifacts required for the final submission (in the `ROBO/submissions/submission` folder) described in the next section
 4. Zip the `ROBO/submissions/submission` folder.
 
+A short presentation describing the solution can be found [here](beamer.pdf).
+
 ## Contents
 
 For each robot type (bumblebee, beetle and butterfly) there are the following scripts:
